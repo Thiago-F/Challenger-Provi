@@ -7,6 +7,7 @@ export const Content = styled.div`
   padding: 30px;
   width: 100%;
   height: 100vh;
+  background-color: #f5f5f5;
 
   .box-container {
     display: flex;
