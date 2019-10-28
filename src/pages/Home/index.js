@@ -39,12 +39,7 @@ export default function Home() {
           <BoxInformation width="25%" data={TotalParcel} />
         </div>
         <div className="info-section">
-          <div className="chart-wrapper">
-            <div className="chart">
-              <h1>Chart</h1>
-            </div>
-          </div>
-          <BoxCourse width="50%" />
+          <BoxCourse width="100%" />
         </div>
       </Content>
     </Container>

@@ -14,7 +14,6 @@ export const Content = styled.div`
   }
   .info-section {
     display: flex;
-    border: 1px solid red;
     margin-top: 15px;
 
     .chart-wrapper {
