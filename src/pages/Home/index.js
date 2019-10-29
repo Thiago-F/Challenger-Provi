@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import api from '../../services/api';
 
 import Aside from '../../components/Aside';
 
@@ -9,6 +11,15 @@ import CourseModal from '../../components/CourseModal';
 import PaymentModal from '../../components/PaymentModal';
 
 export default function Home() {
+  useEffect(() => {
+    const getData = async () => {
+      const response = await api.get('/loans');
+
+      console.log('res', response.data);
+    };
+    getData();
+  }, []);
+
   const totalValue = {
     value: 'R$ 10.000,00',
     text: 'Valor total',
