@@ -1,4 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import { useDispatch, useSelector } from 'react-redux';
+import * as courseActions from '../../store/modules/course/action';
 
 import api from '../../services/api';
 
@@ -11,32 +14,59 @@ import CourseModal from '../../components/CourseModal';
 import PaymentModal from '../../components/PaymentModal';
 
 export default function Home() {
+  const dispatch = useDispatch();
+
+  const [loans, setLoans] = useState({
+    loan: '',
+    course: '',
+    actuallyPartial: '',
+  });
+  // const [course, setCourse] = useState();
+
   useEffect(() => {
     const getData = async () => {
       const response = await api.get('/loans');
 
-      console.log('res', response.data);
+      const activeLoans = response.data.filter(res => res.active === true)[0];
+      const activeCourse = activeLoans.courses.filter(
+        al => al.active === true
+      )[0];
+      const activePartial = activeCourse.paymentOptions.filter(
+        po => po.active === true
+      )[0];
+
+      const data = {
+        loan: activeLoans,
+        course: activeCourse,
+        actuallyPartial: activePartial,
+      };
+
+      //dispatch(courseActions.addCourse(data));
+      setLoans(data);
     };
     getData();
   }, []);
 
+// const loansData = useSelector(state => state.course);
+
+
   const totalValue = {
-    value: 'R$ 10.000,00',
+    value: loans.course.courseValue,
     text: 'Valor total',
     widget: 'O valor total do emprestimo',
   };
   const monthlyInterest = {
-    value: '2%',
+    value: loans.actuallyPartial.fees,
     text: 'Taxa de juros a.m',
     widget: 'A taxa atual do seu plano %a.m',
   };
   const actuallyParcel = {
-    value: 'R$ 500,00',
+    value: loans.actuallyPartial.partialMonth,
     text: 'Parcela Atual',
     widget: 'Parcela atual',
   };
   const TotalParcel = {
-    value: '10x',
+    value: `${loans.actuallyPartial.partials}x`,
     text: 'Total de Parcelas',
     widget: 'Parcela atual',
   };
@@ -52,7 +82,7 @@ export default function Home() {
           <BoxInformation width="25%" data={TotalParcel} />
         </div>
         <div className="info-section">
-          <BoxCourse width="100%" />
+          <BoxCourse data={loans} width="100%" />
         </div>
       </Content>
       {/* <CourseModal data /> */}
