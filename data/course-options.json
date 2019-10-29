@@ -1,0 +1,119 @@
+{
+  "schoolName": "Mirago",
+  "courses": [
+    {
+      "courseNmae": "Marketing Digital Expert Presencial",
+      "courseDuration": "1 mês",
+      "courseTime": "Part time",
+      "courseValue": "3200",
+      "paymentOptions": [
+        {
+          "partials": 3,
+          "fees": "0.00",
+          "partialMonth": "1077.21"
+        },
+        {
+          "partials": 6,
+          "fees": "0.00",
+          "partialMonth": "540.63"
+        },
+        {
+          "partials": 9,
+          "fees": "0.00",
+          "partialMonth": "361.80"
+        },
+        {
+          "partials": 12,
+          "fees": "0.00",
+          "partialMonth": "272.36"
+        },
+        {
+          "partials": 18,
+          "fees": "0.49",
+          "partialMonth": "191.40"
+        },
+        {
+          "partials": 24,
+          "fees": "0.79",
+          "partialMonth": "151.58"
+        }
+      ]
+    },
+    {
+      "courseNmae": "Marketing Digital Expert Online",
+      "courseDuration": "1 mês",
+      "courseTime": "Part time",
+      "courseValue": "2400",
+      "paymentOptions": [
+        {
+          "partials": 3,
+          "fees": "0.00",
+          "partialMonth": "807.91"
+        },
+        {
+          "partials": 6,
+          "fees": "0.00",
+          "partialMonth": "405.48"
+        },
+        {
+          "partials": 9,
+          "fees": "0.00",
+          "partialMonth": "271.35"
+        },
+        {
+          "partials": 12,
+          "fees": "0.00",
+          "partialMonth": "204.27"
+        },
+        {
+          "partials": 18,
+          "fees": "0.49",
+          "partialMonth": "143.55"
+        },
+        {
+          "partials": 24,
+          "fees": "0.79",
+          "partialMonth": "116.68"
+        }
+      ]
+    },
+    {
+      "courseNmae": "E-Commerce na Prática Presencial",
+      "courseDuration": "5 dias",
+      "courseTime": "Part time",
+      "courseValue": "1500",
+      "paymentOptions": [
+        {
+          "partials": 3,
+          "fees": "0.00",
+          "partialMonth": "504.94"
+        },
+        {
+          "partials": 6,
+          "fees": "0.00",
+          "partialMonth": "253.42"
+        },
+        {
+          "partials": 9,
+          "fees": "0.00",
+          "partialMonth": "169.59"
+        },
+        {
+          "partials": 12,
+          "fees": "0.00",
+          "partialMonth": "127.67"
+        },
+        {
+          "partials": 18,
+          "fees": "0.49",
+          "partialMonth": "89.72"
+        },
+        {
+          "partials": 24,
+          "fees": "0.79",
+          "partialMonth": "71.05"
+        }
+      ]
+    }
+  ]
+}
