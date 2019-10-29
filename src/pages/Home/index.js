@@ -15,13 +15,11 @@ import PaymentModal from '../../components/PaymentModal';
 
 export default function Home() {
   const dispatch = useDispatch();
-
   const [loans, setLoans] = useState({
     loan: '',
     course: '',
     actuallyPartial: '',
   });
-  // const [course, setCourse] = useState();
 
   useEffect(() => {
     const getData = async () => {
@@ -41,14 +39,11 @@ export default function Home() {
         actuallyPartial: activePartial,
       };
 
-      //dispatch(courseActions.addCourse(data));
+      dispatch(courseActions.addCourse(data));
       setLoans(data);
     };
     getData();
   }, []);
-
-// const loansData = useSelector(state => state.course);
-
 
   const totalValue = {
     value: loans.course.courseValue,
@@ -82,7 +77,7 @@ export default function Home() {
           <BoxInformation width="25%" data={TotalParcel} />
         </div>
         <div className="info-section">
-          <BoxCourse data={loans} width="100%" />
+          <BoxCourse width="100%" />
         </div>
       </Content>
       {/* <CourseModal data /> */}
