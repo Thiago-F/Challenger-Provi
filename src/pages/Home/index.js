@@ -5,6 +5,8 @@ import Aside from '../../components/Aside';
 import { Container, Content } from './styles';
 import BoxInformation from '../../components/BoxInformation';
 import BoxCourse from '../../components/BoxCourse';
+import CourseModal from '../../components/CourseModal';
+import PaymentModal from '../../components/PaymentModal';
 
 export default function Home() {
   const totalValue = {
@@ -42,6 +44,8 @@ export default function Home() {
           <BoxCourse width="100%" />
         </div>
       </Content>
+      {/* <CourseModal data /> */}
+      {/* <PaymentModal data /> */}
     </Container>
   );
 }

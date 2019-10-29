@@ -10,17 +10,21 @@ export default function BoxCourse({ width }) {
           <div className="name">Escola escolhida:</div>
           <div className="text">Gama Academy</div>
         </div>
-        <div className="row">
+        <div className="row row-button">
           <div className="name">Curso:</div>
           <div className="text">Desenvolvimento Front-end</div>
+          <button type="button">Alterar opção de curso</button>
         </div>
         <div className="row">
           <div className="name">Duração:</div>
           <div className="text">5 semanas / Part-time</div>
         </div>
-        <div className="row">
-          <div className="name">Opção desejada:</div>
-          <div className="text">18x com juros de 0.89% ao mês</div>
+        <div className="row row-button">
+          <div>
+            <div className="name">Opção desejada:</div>
+            <div className="text">18x com juros de 0.89% ao mês</div>
+          </div>
+          <button type="button">Alterar opção desejada</button>
         </div>
       </Content>
     </Container>

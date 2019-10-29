@@ -5,7 +5,6 @@ import { Container } from './styles';
 export default function Aside() {
   return (
     <Container>
-      <div className="toggle">X</div>
       <header>
         <div className="user">
           <div className="user-avatar" />

@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   /*color: #fff;*/
 
-  .toggle {
+  /*.toggle {
     border: 1px solid black;
     width: 30px;
     height: 30px;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
+  }*/
 
   header {
     display: flex;
