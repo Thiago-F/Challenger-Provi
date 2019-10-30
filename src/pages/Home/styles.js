@@ -36,5 +36,10 @@ export const Content = styled.div`
     justify-content: center;
     padding: 3px;
     color: #586069;
+
+    a {
+      text-decoration: none;
+      color: #586069;
+    }
   }
 `;
