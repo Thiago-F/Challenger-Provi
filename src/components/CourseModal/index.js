@@ -5,13 +5,27 @@ import { MdAccessTime, MdTimelapse } from 'react-icons/md';
 import { Content } from './styles';
 import Modal from '../Modal';
 
+const INITIAL_DATA = {
+  actuallyPartial: '',
+  course: '',
+  loan: '',
+  totalCourse: [],
+};
+
 export default function CourseModal() {
   const [keyModal] = useState(1);
   const [open, setOpen] = useState(false);
+  const [data, setData] = useState([]);
 
   const openState = useSelector(
     state => state.modal.filter(sm => sm.key === keyModal)[0]
   );
+  const courseData = useSelector(state => state.course);
+
+  useEffect(() => {
+    console.log('dta', courseData);
+    if (courseData) setData(courseData[0].totalCourse);
+  }, [courseData]);
 
   useEffect(() => {
     if (openState) {
@@ -21,11 +35,50 @@ export default function CourseModal() {
     }
   }, [openState]);
 
+  const handleChangeCourse = (course) => {
+    console.log('c' ,course)
+  }
+
   return (
     <Modal title="Opçoes de cursos" open={open} key="1">
       <Content>
         <div className="course-box">
-          <div className="course-single">
+          {data.map(d => (
+            <div
+              key={d.id}
+              className="course-single"
+              onClick={() => handleChangeCourse(d)}
+            >
+              <div className="content">
+                <div className="icon">
+                  <img
+                    src={d.url}
+                    className="CurseCarouselstyles__IconImg-sc-13gzzuu-2 izbUYr"
+                    alt="course-info"
+                  />
+                </div>
+                <div className="title">{d.courseName}</div>
+                <div className="infos">
+                  <div className="duration">
+                    <MdAccessTime size={18} color="#212121" />
+                    <div>{d.courseDuration}</div>
+                  </div>
+                  <div className="time">
+                    <MdTimelapse size={18} color="#212121" />
+                    <div>{d.courseTime}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Content>
+    </Modal>
+  );
+}
+
+/**
+ * <div className="course-single">
             <div className="content">
               <div className="icon">
                 <img
@@ -113,8 +166,4 @@ export default function CourseModal() {
               </div>
             </div>
           </div>
-        </div>
-      </Content>
-    </Modal>
-  );
-}
+ */

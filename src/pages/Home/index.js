@@ -37,6 +37,7 @@ export default function Home() {
         loan: activeLoans,
         course: activeCourse,
         actuallyPartial: activePartial,
+        totalCourse: activeLoans.courses,
       };
 
       dispatch(courseActions.addCourse(data));

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import * as ModalActions from '../../store/modules/modal/actions';
@@ -7,12 +7,18 @@ import * as ModalActions from '../../store/modules/modal/actions';
 import { Container, Content } from './styles';
 
 export default function BoxCourse({ width }) {
+  const [data, setData] = useState([]);
+
   const dispatch = useDispatch();
-  const data = useSelector(state => state.course);
+  const courseData = useSelector(state => state.course);
 
   function openModal(id) {
     dispatch(ModalActions.openModal(id));
   }
+
+  useEffect(() => {
+    setData(courseData[0]);
+  }, courseData);
 
   if (!data.loan) {
     return (

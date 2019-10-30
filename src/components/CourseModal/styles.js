@@ -5,10 +5,12 @@ export const Content = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 600px;
 
     .course-single {
       padding: 15px;
       width: 33.33%;
+      cursor: pointer;
 
       .content {
         padding: 15px;
