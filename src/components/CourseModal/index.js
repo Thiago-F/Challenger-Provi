@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { MdAccessTime, MdTimelapse } from 'react-icons/md';
 import { Content } from './styles';
 import Modal from '../Modal';
 
-const INITIAL_DATA = {
-  actuallyPartial: '',
-  course: '',
-  loan: '',
-  totalCourse: [],
-};
+import * as courseActions from '../../store/modules/course/actions';
+import * as ModalActions from '../../store/modules/modal/actions';
 
 export default function CourseModal() {
+  const dispatch = useDispatch();
   const [keyModal] = useState(1);
   const [open, setOpen] = useState(false);
   const [data, setData] = useState([]);
@@ -23,7 +20,6 @@ export default function CourseModal() {
   const courseData = useSelector(state => state.course);
 
   useEffect(() => {
-    console.log('dta', courseData);
     if (courseData) setData(courseData[0].totalCourse);
   }, [courseData]);
 
@@ -35,14 +31,20 @@ export default function CourseModal() {
     }
   }, [openState]);
 
-  const handleChangeCourse = (course) => {
-    console.log('c' ,course)
-  }
+  const handleChangeCourse = course => {
+    const newCourse = [...courseData][0];
+    newCourse.course = course;
+    dispatch(courseActions.addCourse(newCourse));
+
+    dispatch(ModalActions.closeModal(1));
+    dispatch(ModalActions.openModal(2));
+  };
 
   return (
     <Modal title="Opçoes de cursos" open={open} key="1">
       <Content>
         <div className="course-box">
+          
           {data.map(d => (
             <div
               key={d.id}

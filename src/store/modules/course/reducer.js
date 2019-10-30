@@ -17,7 +17,6 @@ export default function course(state = INITIAL_STATE, action) {
       copyState = [action.payload.course];
 
       state = [...copyState];
-
       return state;
     }
 

@@ -28,6 +28,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'array-callback-return': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
-    'jsx-a11y/no-static-element-interactions' : 'off'
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'no-return-assign': 'off',
   },
 };

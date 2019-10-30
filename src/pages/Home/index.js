@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
-import * as courseActions from '../../store/modules/course/action';
+import * as courseActions from '../../store/modules/course/actions';
 
 import api from '../../services/api';
 
@@ -20,6 +20,8 @@ export default function Home() {
     course: '',
     actuallyPartial: '',
   });
+
+  const courseData = useSelector(state => state.course);
 
   useEffect(() => {
     const getData = async () => {
@@ -66,6 +68,15 @@ export default function Home() {
     text: 'Total de Parcelas',
     widget: 'Parcela atual',
   };
+
+  useEffect(() => {
+    if (courseData.loan) {
+      totalValue.value = courseData.course.courseValue;
+      monthlyInterest.value = courseData.actuallyPartial.fees;
+      actuallyParcel.value = courseData.actuallyPartial.partialMonth;
+      TotalParcel.value = courseData.actuallyPartial.partials;
+    }
+  }, courseData);
 
   return (
     <Container>
