@@ -10,49 +10,49 @@
           "courseName": "Marketing Digital Expert Presencial",
           "courseDuration": "1 mês",
           "courseTime": "Part time",
-          "courseValue": "3200",
+          "courseValue": " R$ 3.200",
           "active": false,
           "paymentOptions": [
             {
               "id": 1,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "1077.21",
+              "partialMonth": " R$ 1077,21",
               "active": false
             },
             {
               "id": 2,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "540.63",
+              "partialMonth": " R$ 540,63",
               "active": false
             },
             {
               "id": 3,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "361.80",
+              "partialMonth": " R$ 361,80",
               "active": false
             },
             {
               "id": 4,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "272.36",
+              "partialMonth": " R$ 272,36",
               "active": false
             },
             {
               "id": 5,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "191.40",
+              "partialMonth": " R$ 191,40",
               "active": false
             },
             {
               "id": 6,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "151.58",
+              "partialMonth": " R$ 151,58",
               "active": false
             }
           ]
@@ -62,49 +62,49 @@
           "courseName": "Marketing Digital Expert Online",
           "courseDuration": "1 mês",
           "courseTime": "Part time",
-          "courseValue": "2400",
+          "courseValue": " R$ 2.400",
           "active": false,
           "paymentOptions": [
             {
               "id": 7,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "807.91",
+              "partialMonth": " R$ 807,91",
               "active": true
             },
             {
               "id": 8,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "405.48",
+              "partialMonth": " R$ 405,48",
               "active": false
             },
             {
               "id": 9,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "271.35",
+              "partialMonth": " R$ 271,35",
               "active": false
             },
             {
               "id": 10,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "204.27",
+              "partialMonth": " R$ 204,27",
               "active": false
             },
             {
               "id": 11,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "143.55",
+              "partialMonth": " R$ 143,55",
               "active": false
             },
             {
               "id": 12,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "116.68",
+              "partialMonth": " R$ 116,68",
               "active": false
             }
           ]
@@ -114,49 +114,49 @@
           "courseName": "E-Commerce na Prática Presencial",
           "courseDuration": "5 dias",
           "courseTime": "Part time",
-          "courseValue": "1500",
+          "courseValue": " R$ 1.500",
           "active": true,
           "paymentOptions": [
             {
               "id": 13,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "504.94",
+              "partialMonth": " R$ 504,94",
               "active": false
             },
             {
               "id": 14,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "253.42",
+              "partialMonth": " R$ 253,42",
               "active": false
             },
             {
               "id": 15,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "169.59",
+              "partialMonth": " R$ 169,59",
               "active": false
             },
             {
               "id": 16,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "127.67",
+              "partialMonth": " R$ 127,67",
               "active": false
             },
             {
               "id": 17,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "89.72",
+              "partialMonth": " R$ 89,72",
               "active": true
             },
             {
               "id": 18,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "71.05",
+              "partialMonth": " R$ 71,05",
               "active": false
             }
           ]
@@ -173,7 +173,7 @@
           "courseName": "Formação em Transformação Digital",
           "courseDuration": "15 semanas",
           "courseTime": "Part time",
-          "courseValue": "4490",
+          "courseValue": " R$ 4.490",
           "active": true,
           "url": "https://firebasestorage.googleapis.com/v0/b/provi-site.appspot.com/o/website_assets%2Ficons%2Ftransformacao_digital.png?alt=media&token=0ef26ab3-afa0-4f62-9c96-df07ad426f4a",
           "paymentOptions": [
@@ -181,42 +181,42 @@
               "id": 19,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "1511.33",
+              "partialMonth": " R$ 1511,33",
               "active": false
             },
             {
               "id": 20,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "758.51",
+              "partialMonth": " R$ 758,51",
               "active": true
             },
             {
               "id": 21,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "507.60",
+              "partialMonth": " R$ 507,60",
               "active": false
             },
             {
               "id": 22,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "382.13",
+              "partialMonth": " R$ 382,13",
               "active": false
             },
             {
               "id": 23,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "268.51",
+              "partialMonth": " R$ 268,51",
               "active": false
             },
             {
               "id": 24,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "212.62",
+              "partialMonth": " R$ 212,62",
               "active": false
             }
           ]
@@ -226,7 +226,7 @@
           "courseName": "Formação em Empreendedorismo Digital",
           "courseDuration": "15 semanas",
           "courseTime": "Part time",
-          "courseValue": "4490",
+          "courseValue": " R$ 4.490",
           "active": false,
           "url": "https://firebasestorage.googleapis.com/v0/b/provi-site.appspot.com/o/website_assets%2Ficons%2Fempreendedor_digital.png?alt=media&token=5b03eae0-4e1c-45b6-a82c-c5ef97eeabae",
           "paymentOptions": [
@@ -234,42 +234,42 @@
               "id": 19,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "1511.33",
+              "partialMonth": " R$ 1.511,33",
               "active": false
             },
             {
               "id": 20,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "758.51",
+              "partialMonth": " R$ 758,51",
               "active": false
             },
             {
               "id": 21,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "507.60",
+              "partialMonth": " R$ 507,60",
               "active": true
             },
             {
               "id": 22,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "382.13",
+              "partialMonth": " R$ 382,13",
               "active": false
             },
             {
               "id": 23,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "268.51",
+              "partialMonth": " R$ 268,51",
               "active": false
             },
             {
               "id": 24,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "212.62",
+              "partialMonth": " R$ 212,62",
               "active": false
             }
           ]
@@ -279,7 +279,7 @@
           "courseName": "Curso de Digital Influencer",
           "courseDuration": "4 semanas",
           "courseTime": "Part time",
-          "courseValue": "1090",
+          "courseValue": " R$ 1.090",
           "active": false,
           "url": "https://firebasestorage.googleapis.com/v0/b/provi-site.appspot.com/o/website_assets%2Ficons%2Fyoutuber.png?alt=media&token=12d938d1-c235-4f41-83ac-63ecab73c3cf",
           "paymentOptions": [
@@ -287,42 +287,42 @@
               "id": 25,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "366.89",
+              "partialMonth": " R$ 366,89",
               "active": true
             },
             {
               "id": 26,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "184.14",
+              "partialMonth": " R$ 184,14",
               "active": false
             },
             {
               "id": 27,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "123.23",
+              "partialMonth": " R$ 123,23",
               "active": false
             },
             {
               "id": 28,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "92.77",
+              "partialMonth": " R$ 92,77",
               "active": false
             },
             {
               "id": 29,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "65.18",
+              "partialMonth": " R$ 65,18",
               "active": false
             },
             {
               "id": 30,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "51.62",
+              "partialMonth": " R$ 51,62",
               "active": false
             }
           ]
@@ -332,7 +332,7 @@
           "courseName": "Formação em Data Science",
           "courseDuration": "15 semanas",
           "courseTime": "Part time",
-          "courseValue": "4490",
+          "courseValue": " R$ 4.490",
           "active": false,
           "url": "https://firebasestorage.googleapis.com/v0/b/provi-site.appspot.com/o/website_assets%2Ficons%2Fdata_analytics.png?alt=media&token=793a6744-21af-412d-8e0b-449b8b12143d",
           "paymentOptions": [
@@ -340,42 +340,42 @@
               "id": 31,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "1511.33",
+              "partialMonth": " R$ 1.511,33",
               "active": false
             },
             {
               "id": 32,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "758.51",
+              "partialMonth": " R$ 758,51",
               "active": false
             },
             {
               "id": 33,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "507.60",
+              "partialMonth": " R$ 507,60",
               "active": false
             },
             {
               "id": 34,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "382.13",
+              "partialMonth": " R$ 382,13",
               "active": false
             },
             {
               "id": 35,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "268.51",
+              "partialMonth": " R$ 268,51",
               "active": true
             },
             {
               "id": 36,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "212.62",
+              "partialMonth": " R$ 212,62",
               "active": false
             }
           ]
@@ -385,7 +385,7 @@
           "courseName": "Formação em Marketing Digital",
           "courseDuration": "15 semanas",
           "courseTime": "Part time",
-          "courseValue": "4490",
+          "courseValue": " R$ 4.490",
           "active": false,
           "url": "https://firebasestorage.googleapis.com/v0/b/provi-site.appspot.com/o/website_assets%2Ficons%2Fmkt_digital.png?alt=media&token=4f1fabd8-4ea4-4986-bd4d-a2f9b24893b1",
           "paymentOptions": [
@@ -393,42 +393,42 @@
               "id": 37,
               "partials": 3,
               "fees": "0.00",
-              "partialMonth": "1511.33",
+              "partialMonth": " R$ 1.511,33",
               "active": true
             },
             {
               "id": 38,
               "partials": 6,
               "fees": "0.00",
-              "partialMonth": "758.51",
+              "partialMonth": " R$ 758,51",
               "active": false
             },
             {
               "id": 39,
               "partials": 9,
               "fees": "0.00",
-              "partialMonth": "507.60",
+              "partialMonth": " R$ 507,60",
               "active": false
             },
             {
               "id": 40,
               "partials": 12,
               "fees": "0.00",
-              "partialMonth": "382.13",
+              "partialMonth": " R$ 382,13",
               "active": false
             },
             {
               "id": 41,
               "partials": 18,
               "fees": "0.49",
-              "partialMonth": "268.51",
+              "partialMonth": " R$ 268,51",
               "active": false
             },
             {
               "id": 42,
               "partials": 24,
               "fees": "0.79",
-              "partialMonth": "212.62",
+              "partialMonth": " R$ 212,62",
               "active": false
             }
           ]

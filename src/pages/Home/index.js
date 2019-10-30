@@ -91,6 +91,17 @@ export default function Home() {
         <div className="info-section">
           <BoxCourse width="100%" />
         </div>
+
+        <div className="institucional">
+          Made with {'<'}3 by
+          <a
+            href="https://github.com/Thiago-F"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Thiago-F
+          </a>
+        </div>
       </Content>
       <CourseModal />
       <PaymentModal />

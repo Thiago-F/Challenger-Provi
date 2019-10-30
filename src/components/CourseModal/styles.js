@@ -16,7 +16,7 @@ export const Content = styled.div`
         padding: 15px;
         text-align: center;
         border-radius: 8px;
-        border: 2px solid rgb(74, 179, 201);
+        border: 2px solid #4c7aad;
 
         .icon {
           img {

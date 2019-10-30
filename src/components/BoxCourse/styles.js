@@ -9,7 +9,7 @@ export const Container = styled.div`
 export const Button = styled.div``;
 
 export const Content = styled.div`
-  border: 2px solid rgb(74, 179, 201);
+  border: 2px solid #4c7aad;
   background-color: #fff;
   padding: 15px 20px;
   border-radius: 8px;
@@ -18,7 +18,7 @@ export const Content = styled.div`
     margin-bottom: 20px;
     .name {
       font-size: 20px;
-      color: ${darken(0.1, 'rgb(74, 179, 201)')};
+      color: ${darken(0.1, '#4c7aad')};
     }
     .text {
       font-size: 18px;
@@ -36,15 +36,15 @@ export const Content = styled.div`
         padding: 0 15px;
         background-color: #fff;
         border: 0;
-        border: 2px solid rgb(74, 179, 201);
+        border: 2px solid #4c7aad;
         border-radius: 4px;
-        background-color: rgb(74, 179, 201);
+        background-color: #4c7aad;
         color: #fff;
         font-weight: bold;
         /*min-height: 30px;*/
 
         &:hover {
-          background-color: rgb(74, 179, 201);
+          background-color: #4c7aad;
           color: #fff;
         }
       }

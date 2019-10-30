@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: rgb(74, 179, 201);
+  background: #4c7aad;
 
   width: 100%;
   max-width: 250px;
@@ -9,7 +9,7 @@ export const Container = styled.div`
   position: relative;
   /*left: -180px;*/
 
-  /*color: #fff;*/
+  color: #fff;
 
   /*.toggle {
     border: 1px solid black;
@@ -38,12 +38,16 @@ export const Container = styled.div`
       .user-avatar {
         width: 80px;
         height: 80px;
-        border: 1px solid black;
+        background-color: #fafafa;
         border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .user-name {
-        font-size: 18px;
+        font-size: 20px;
       }
     }
   }
