@@ -1,15 +1,22 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+
+import * as ModalActions from '../../store/modules/modal/actions';
 
 import { Container, Content } from './styles';
 
 export default function BoxCourse({ width }) {
+  const dispatch = useDispatch();
   const data = useSelector(state => state.course);
+
+  function openModal(id) {
+    dispatch(ModalActions.openModal(id));
+  }
 
   if (!data.loan) {
     return (
-      <Container widthSize={width}>
+      <Container widthSize={width} key="2">
         <Content>
           <div className="row">
             <div className="name">Escola escolhida:</div>
@@ -37,7 +44,7 @@ export default function BoxCourse({ width }) {
   }
 
   return (
-    <Container widthSize={width}>
+    <Container widthSize={width} key="2">
       <Content>
         <div className="row">
           <div className="name">Escola escolhida:</div>
@@ -46,7 +53,9 @@ export default function BoxCourse({ width }) {
         <div className="row row-button">
           <div className="name">Curso:</div>
           <div className="text">{data.course.courseName}</div>
-          <button type="button">Alterar opção de curso</button>
+          <button type="button" onClick={() => openModal(1)}>
+            Alterar opção de curso
+          </button>
         </div>
         <div className="row">
           <div className="name">Duração:</div>
@@ -62,7 +71,9 @@ export default function BoxCourse({ width }) {
               {data.actuallyPartial.fees}% ao mês
             </div>
           </div>
-          <button type="button">Alterar opção desejada</button>
+          <button type="button" onClick={() => openModal(2)}>
+            Alterar opção desejada
+          </button>
         </div>
       </Content>
     </Container>

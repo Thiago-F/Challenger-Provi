@@ -38,7 +38,7 @@ export const Background = styled.div`
 
   background-color: rgba(0, 0, 0, 0.3);
 
-  display: flex;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
   justify-content: center;
   align-items: center;
 `;

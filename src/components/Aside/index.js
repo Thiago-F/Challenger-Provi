@@ -11,6 +11,7 @@ export default function Aside() {
         </div>
         <div className="user-name">Thiago Fialho</div>
       </header>
+
       <div className="content">
         <div className="item">
           <div className="icon">X</div>

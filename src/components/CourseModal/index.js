@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import { MdAccessTime, MdTimelapse } from 'react-icons/md';
 import { Content } from './styles';
 import Modal from '../Modal';
 
 export default function CourseModal() {
+  const [keyModal] = useState(1);
+  const [open, setOpen] = useState(false);
+
+  const openState = useSelector(
+    state => state.modal.filter(sm => sm.key === keyModal)[0]
+  );
+
+  useEffect(() => {
+    if (openState) {
+      setOpen(openState.open);
+    } else {
+      setOpen(false);
+    }
+  }, [openState]);
+
   return (
-    <Modal title="Opçoes de cursos">
+    <Modal title="Opçoes de cursos" open={open} key="1">
       <Content>
         <div className="course-box">
           <div className="course-single">

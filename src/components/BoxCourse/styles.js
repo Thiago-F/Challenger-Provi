@@ -6,6 +6,8 @@ export const Container = styled.div`
   width: ${({ widthSize }) => widthSize || 'auto'};
 `;
 
+export const Button = styled.div``;
+
 export const Content = styled.div`
   border: 2px solid rgb(74, 179, 201);
   background-color: #fff;

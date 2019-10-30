@@ -80,8 +80,8 @@ export default function Home() {
           <BoxCourse width="100%" />
         </div>
       </Content>
-      {/* <CourseModal data /> */}
-      {/* <PaymentModal data /> */}
+      <CourseModal />
+      <PaymentModal />
     </Container>
   );
 }
