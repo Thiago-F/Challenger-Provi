@@ -1,6 +1,7 @@
-/* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
+import propTypes from 'prop-types';
 
 import * as ModalActions from '../../store/modules/modal/actions';
 
@@ -18,7 +19,7 @@ export default function BoxCourse({ width }) {
 
   useEffect(() => {
     setData(courseData[0]);
-  }, courseData);
+  }, [courseData]);
 
   if (!data.loan) {
     return (
@@ -85,3 +86,7 @@ export default function BoxCourse({ width }) {
     </Container>
   );
 }
+
+BoxCourse.propTypes = {
+  width: propTypes.string.isRequired,
+};

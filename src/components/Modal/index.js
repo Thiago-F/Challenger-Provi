@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { MdClose } from 'react-icons/md';
 import * as ModalActions from '../../store/modules/modal/actions';
@@ -6,11 +7,11 @@ import * as ModalActions from '../../store/modules/modal/actions';
 import { Container, Background } from './styles';
 import { Title } from '../../styles/styles';
 
-export default function Modal({ children, title, key, open }) {
+export default function Modal({ children, title, keyModal, open }) {
   const dispatch = useDispatch();
 
   const closeModal = () => {
-    dispatch(ModalActions.closeModal(key));
+    dispatch(ModalActions.closeModal(keyModal));
   };
 
   return (
@@ -29,3 +30,13 @@ export default function Modal({ children, title, key, open }) {
     </Background>
   );
 }
+
+Modal.defaultProps = {
+  keyModal: 1,
+};
+Modal.propTypes = {
+  children: propTypes.element.isRequired,
+  title: propTypes.string.isRequired,
+  keyModal: propTypes.number,
+  open: propTypes.bool.isRequired,
+};
